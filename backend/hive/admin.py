@@ -16,7 +16,7 @@ class MealInline(admin.TabularInline):
     extra = 1
 
 class TreatmentAdmin(admin.ModelAdmin):
-    fields = ['owner']
+    fields = ['owner','source']
     inlines = [BgInline, DoseInline, MealInline]
 
 admin.site.register(Treatment,TreatmentAdmin)
